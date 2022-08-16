@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Other Functions</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+  	<div class = "top_navigation">
+        <ul>
+          <li><a href = "index.html">About Me</a></li>
+          <li><a href = "communication.html">Communications</a></li>
+          <li><a href = "other_functions.html">Functionalities</a></li>
+        </ul>
+        </div>
+
+    <div id="communications">    
+      <h1>Other Functions</h1>
+      <p>Below are some functions that you can test out!</p>
+    </div>
+
+  	<div id="translation">
+      <h1>Translator Function</h1>
+      <p>Type any message you want, then select a language to have it translated in that language.</p>
+
+      <textarea id="text" placeholder="Message Goes Here"></textarea>
+
+      <select id="language">
+        <option value="es">English</option>
+        <option value="zh">Chinese</option>
+        <option value="es">Spanish</option>
+        <option value="hi">Hindi</option>
+        <option value="ar">Arabic</option>
+        <option value="fr">French</option>
+        <option value="ja">Japanese</option>
+        <option value="ko">Korean</option>
+        <option value="he">Hebrew</option>
+      </select>
+
+      <button onclick="requestTranslation();">Translate</button>
+
+       <hr/>
+      <div id="result"></div>
+    </div>
+  </body>
+</html>
