@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Portfolio of Joseph Feliciano</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="content">
+
+        <div class = "top_navigation">
+          <ul>
+            <li><a href = "index.html">About Me</a></li>
+            <li><a href = "communication.html">Communications</a></li>
+            <li><a href = "other_functions.html">Functionalities</a></li>
+          </ul>
+        </div>
+
+        <div id="title">
+            <h1>About Me: Joseph Feliciano</h1>
+          </div>
+    
+      <div id="portfolio_image">
+        <img src="https://avatars.githubusercontent.com/u/100709990?v=4" 
+                  height="200" alt="Joseph Feliciano Portfolio Image">
+      </div>
+
+      <div id="message_box">
+        <h1>Hello There!</h1>
+        <p>My name is Joseph Feliciano and I am excited to be a participant of the Google SPS Program.<br>
+           I am glad that I am given this opportunity to assist in creating the next generation of the <br>
+           Computer Science world and to help establish an efficient and well-rounded community in <br>
+           the technical field. I enjoy challenges and use them to enhance my skills. Check out <br>
+         a little more about me below!</p>
+      </div>
+
+      <div id="fun_facts">
+        <h2>Fun Facts</h2>
+        <ul>
+          <li><p>I am a HUGE Sonic The Hedgehog fan!<br>
+                 Action and speed make one amazing combination!</p></li>
+          <li><p>I love video games, ranging from racing games<br> 
+                 to hack-and-slasher titles!</li>
+          <li><p>I love all kinds of food! Pizza, steak, you name it!<br>
+                 Put it in front of me, and it's getting eaten!</p></li>      
+          <li><p>I like to storywrite on my free time!<br>
+                 Expressing imagination on paper is awesome to me.</p></li>
+        </ul>  
+      </div>
+
+      <div id="quote_generator">
+        <h2>Quote Generator</h2>
+        <p>I have seen many quotes that I would deem inspiring, funny, or simply interesting.<br>
+           This is my way of sharing those quotes with you. Hopefully, <br>
+           you would think the same when you see them.</p>
+        <p>Click the button below to generate a random quote from my list of quotes:</p>
+        <button onclick="generateQuote()">Generate Quote</button>
+
+        <div id="quoteContainer"></div>
+        </div>
+
+      </div>
+
+      <div id="projects_table">
+        <h1>Projects</h1>
+        <p>Below is a table that describes the different projects that I have done in the past.</p>
+
+        <table id="projects">
+          <tbody>
+            <tr>
+              <th>Project Name</th>
+              <th>Date</th>
+              <th>Description</th>
+              <th>Tools/Software Used</th>
+              <th>Sample/Snippet of Code</th>
+            </tr>
+
+            <tr>
+              <td>Website Project - Web Development</td>
+              <td>Fall 2021</td>
+              <td><p>We had to use our imagination to create a small website that had<br>
+                     at least 4 pages, including 2 pages of HTML, one using CSS, and another<br>
+                     using JavaScript. The JavaScript page should perform validation on possible<br>
+                     emails, phone numbers, or other fields. The creative integrity of the website was<br>
+                     completely up to us.</p></td>
+              <td><p>Atom Text Editor or Sublime Text Editor, HTML/CSS/JavaScript Languages,<br>
+                     and our browsers to preview our websites.</p></td>
+              <td><a href="https://gist.github.com/Xyndro/12e376bde6b549b55be901cbc20023cb">Click Here To View!</a></td>
+            </tr>
+
+            <tr>
+                <td>Java Desktop Application w/ GUIs</td>
+                <td>Spring 2022</td>
+                <td><p>A more recent project that mimicked our final examination. We had to build a desktop<br>
+                    application that used data from a database with its respective script. The <br>
+                    data retrieved would be placed onto a Graphical User Interface. This was then imitated <br>
+                    on our final examination.</p></td>
+                <td><p>Java Programming Language, MySQL, and the Eclipse IDE</p></td>
+                <td><a href="https://learn-us-east-1-prod-fleet02-xythos.content.blackboardcdn.com/61aab133e7df2/81553149?X-Blackboard-Expiration=1654376400000&X-Blackboard-Signature=WTujs9tv9qs%2FBnDMlaU9jLtogZOBecAFTWJNHO7q3QY%3D&X-Blackboard-Client-Id=100211&response-cache-control=private%2C%20max-age%3D21600&response-content-disposition=attachment%3B%20filename%3D%22FinalExam_CUNY_Feliciano_Spring2022.zip%22%3B%20filename%2A%3DUTF-8%27%27FinalExam_CUNY_Feliciano_Spring2022.zip&response-content-type=application%2Fzip&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJj%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQCuvymAUfYZA1tMGivH9hExYj3BRlxdE0DRshXcR0SoZwIgMJyfyiQOYMFtNsHnWj4g6eDVjt1nTGFvxbrlwsMmn7Yq2wQIkP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARACGgw2MzU1Njc5MjQxODMiDAiA45dF8rU%2Fw2ZcqSqvBDNWJTfoXOk0UPrBDHijzblGKgh5Dz16F%2FQAMIwZ2LJVwmkqGokGXlQZdByIX7rfQKtklP51nHXp8SHab8CbFxmjlIjRXZGLWvHZEtjuk3Nb4DatCPGF3xQpywKWuqytiRIye41NxGblTti1TkKUPXSfbK%2B5pE1opfx9ClZXWw%2FS7%2FdZ3nBTgbWIp3YnNL5qT0sh%2BZG%2FvdAm5pgmq65WEWHM8BxC%2FPV5nSsORlaFXEleWMq36OvgaRdBIMpCUnB70b1DGPQLDPeutk7t0LRKNbHJl%2FKhNoKPNHP9byHePqr1eb%2FAWQlZB2gWvE%2BiFUW03u5XdH2gbmGXMGbTDST79mwKPImaO08cv%2F5l8ExOtUL%2B3sQH%2BLH3qNBXLwF8or96e0FgP4PESqlvgnJ9quM72vP2LJIirezElCO5GSzhSfK9jw%2B6%2FSzfAC%2B71iMvjLQbC19TUJCVEwL%2BdGPOGlnrBgRrqKmuWUzF8vnWdte04iO26uFBVJr2s8SOJq8ZuyjT30gM2shsGBAIdMM3StWVwUIB%2BAVG54zZDB1msGN3E8sOdk6d6dClbnxA0WfXbovPqa60RdV0%2BThsqwGiEfnLDa6MLrlQqO4vrr69SFUgVPS4zOlRUah3E6O2pjRYy2UAFXU3DjGKEpFVD%2FZNCFAGaXEgjSOBEqUVP21T7aQ1ZN%2BeceTrP2dR0vLXtvYC%2BLZcmJTzvoAKafGg0fX59IGGPRKG8d%2BJEDQmbj%2BmE%2FOgfd0w6O7tlAY6qQEE8nfDA4KOni%2BkYPPriAIAiD1qE4X3cStnwq7X3OZEDfthhUL4e8aLFPANtJNw7MSt43IrPvrxCRd5sRSW63Dsoj%2BLhvHXnncuIfqWdvwrU16qWEZoQ4%2FtElbn8mUqD77x1fhWzT7YSUv9tVfabeVtYrjGd4kyxpzJIMDUVCrr1vGOPZIiy2zz7g%2F5uMdfu%2BPq0tGejAFQVwvkDcUGwlDqakruVmR1qT46&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220604T150000Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21600&X-Amz-Credential=ASIAZH6WM4PLVFMBCE2W%2F20220604%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=a1428e0ad0d28f9818d8513f983e178cf50fadb0c2587328c7a8a020bdb7dccc">Click To Download Zip Of Project!</a></td>
+              </tr>
+
+              <tr>
+                <td>Robustness Diagram - Object Oriented Systems Design</td>
+                <td>Spring 2022</td>
+                <td><p>We were assigned to create a Robustness Diagram representing our <br>
+                       system, using proper boundaries, controllers, and entities. The <br>
+                       boundaries represents screens. Controllers represent the internal logic. <br>
+                       The entites represent the data outputed onto a screen or something similar.</p></td>
+                <td><p>Lucidchart Diagram Formatter, LibreOffice, or anything that allows for clean diagramming<br>
+                      with proper syntax of the corresponding diagram.</p></td>
+                <td><a href="https://lucid.app/lucidchart/356fe7db-42b4-46cf-975c-982855fee1cb/edit?page=0_0&invitationId=inv_e303c92d-4951-4765-95e9-fee11385cf5d#">Click Me To View Diagram!</a></td>
+              </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+      <div id="imagery_strip">
+        <h1>Personal Gallery</h1>
+        <p>To finalize, here is a strip of images that like from video games, nice sights, and the like. <br>
+           You'll never know, maybe one of these might be your next desktop background.</p>
+
+           <div id="ygo_pic_description">   
+            <p>Yu-Gi-Oh Card Game</p>   
+          </div>
+  
+          <div id="dmc_pic_description">
+            <p>Devil May Cry Video Game</p>
+          </div>
+  
+          <div id="program_pic_description">
+            <p>The World of Programming</p>
+          </div>
+  
+          <div id="friends_pic_description">
+            <p>Hanging With Friends</p>
+          </div>
+
+          <div id="handball_pic_description">
+            <p>Playing American Handball</p>
+          </div>
+
+      </div>
+
+      <div id="image_box">
+        <img src="https://cdn11.bigcommerce.com/s-0kvv9/images/stencil/1280x1280/products/223216/311127/sylvanpeaskeeperlvalende1__91012.1519955535.jpg?c=2"
+        width="150" alt="Yu-Gi-Oh Card Image">
+        <img src="https://www.gematsu.com/wp-content/uploads/2020/10/DMC5SE_10-27-20_001-scaled.jpg"
+        width="220" height="217" alt="Devil May Cry Image">
+        <img src="https://1.bp.blogspot.com/-SctQVJ0u_D0/XkGGNAIqdvI/AAAAAAAAEBk/wh4iNiJwMKAG9b4AU5zoUwHHXYp12P8EwCLcBGAsYHQ/w1200-h630-p-k-no-nu/Hello%2BWorld%2BProgram%2BIn%2BJava%2BBy%2BCodiiZone.jpg"
+         width="220" height="217" alt="Hello World Program Image">
+        <img src="https://thumbs.dreamstime.com/b/diverse-people-friends-hanging-out-concept-67567109.jpg"
+         width="200" height="217" alt="Friends Hanging Out Image">
+        <img src="https://sportspagereplay.com/wp-content/uploads/2015/09/american-handball.jpg"
+         width="200" height="217" alt="Handball Image"> 
+      </div>
+
+    </div>
+
+  </body>
+</html>
